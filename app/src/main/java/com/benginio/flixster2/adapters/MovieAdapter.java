@@ -17,6 +17,10 @@ import com.benginio.flixster2.DetailActivity;
 import com.benginio.flixster2.R;
 import com.benginio.flixster2.models.Movie;
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.bumptech.glide.load.resource.bitmap.CircleCrop;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 
 import org.parceler.Parcels;
 
@@ -81,7 +85,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 //else imageUrl= poster image
                 imageUrl=movie.getPosterPath();
             }
+//            int radius = 5; // corner radius, higher value = more rounded
+//            int margin = 10; // crop margin, set to 0 for corners with no crop
+//            RequestOptions requestOptions = new RequestOptions();
+//            requestOptions = requestOptions.transforms(new CenterCrop(), new RoundedCorners(5));
             Glide.with(context).load(imageUrl)
+                    .centerCrop() // scale image to fill the entire ImageView
+                  //  .apply(requestOptions)
+                    .transform(new CenterCrop(), new RoundedCorners(5))
                     .placeholder(R.drawable.placeholdermovieland)
                     .into(ivPoster) ;
             //1. Register click listerner on the whole row

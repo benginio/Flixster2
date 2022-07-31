@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Flixster2">
         <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:largeHeap="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

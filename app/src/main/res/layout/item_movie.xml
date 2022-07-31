@@ -15,9 +15,9 @@
 
         <ImageView
             android:id="@+id/ivPoster"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_width="155dp"
+            android:layout_height="230dp"
+            android:layout_marginRight="5dp"
             android:paddingTop="5dp"
             tools:srcCompat="@tools:sample/avatars" />
 
