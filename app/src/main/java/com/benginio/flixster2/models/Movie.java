@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 @Parcel
 public class Movie {
+    int movieId;
     String posterPath;
     String title;
     String overview;
@@ -21,6 +22,7 @@ public class Movie {
         title=jsonObject.getString("title");
         overview=jsonObject.getString("overview");
         rating=jsonObject.getDouble("vote_average");
+        movieId=jsonObject.getInt("id");
     }
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
             List<Movie> movie=new ArrayList<>();
@@ -48,5 +50,9 @@ public class Movie {
 
     public double getRating() {
         return rating;
+    }
+
+    public int getMovieId() {
+        return movieId;
     }
 }
