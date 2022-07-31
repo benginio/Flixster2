@@ -6,7 +6,7 @@
 
 #### REQUIRED (10pts)
 
-- [ ] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
+- [x] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
 - [ ] (2pts) Allow video posts to be played in full-screen using the YouTubePlayerView.
 
 #### BONUS
