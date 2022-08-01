@@ -35,7 +35,7 @@ public class DetailActivity extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-       // getSupportActionBar().hide();//for hide the actionbar
+       // getSupportActionBar().hide();//for hide the actionbar//
         
         tvTitle=findViewById(R.id.tvTitle);
         tvOverview=findViewById(R.id.tvOverview);
