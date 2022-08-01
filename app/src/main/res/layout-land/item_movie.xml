@@ -17,6 +17,8 @@
             android:id="@+id/ivPoster"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
+            android:transitionName="profile"
+            android:scaleType="centerCrop"
             android:paddingTop="5dp"
             tools:srcCompat="@tools:sample/avatars" />
 
