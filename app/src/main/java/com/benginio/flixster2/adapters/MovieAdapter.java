@@ -106,6 +106,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                     Intent i=new Intent(context, DetailActivity.class);
                     i.putExtra("title", movie.getTitle());
                     i.putExtra("movie", Parcels.wrap(movie));
+                    //for share element transition
                     ActivityOptionsCompat options = ActivityOptionsCompat.
                             makeSceneTransitionAnimation((Activity) context, (View)ivPoster, "profile");
                     context.startActivity(i,options.toBundle());
