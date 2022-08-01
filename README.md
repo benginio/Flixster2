@@ -21,7 +21,7 @@
 
 ### App Walkthough GIF
 
-<img src="https://github.com/benginio/Flixster2/blob/dacd58bc6c339c67ffd7407b7885b65b7060f8d2/Walkthrough.gif" width=250><br>
+<img src="Walkthrough.gif" width=250><br
 
 ### Notes
 
