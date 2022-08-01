@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Flixster2">
-        <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".MainActivity" android:largeHeap="true">
+        <activity android:name=".DetailActivity" android:transitionName="profile"></activity>
+        <activity android:name=".MainActivity" android:largeHeap="true" android:transitionName="profile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
